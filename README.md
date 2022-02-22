@@ -17,7 +17,7 @@ A personal website of Irvan Tristian.
 Cortex can now be installed with the following command:
 
 ```bash
-  helm install pwa tristian-id nonkronk/tristian-id
+  helm install pwa nonkronk/tristian-id
 ```
 
 - Link Helm Chart (nonkronk/tristian-id): [here](https://artifacthub.io/packages/helm/nonkronk/tristian-id)
