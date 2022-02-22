@@ -1,0 +1,60 @@
+# Default values for tristian-id.
+
+autoscaling:
+  enabled: true
+  minReplicas: 5
+  maxReplicas: 10
+  targetCPUUtilizationPercentage: 80
+  # targetMemoryUtilizationPercentage: 80
+
+# Replica count if autoscaling disabled
+replicaCount: 1
+
+image:
+  repository: nonkronk/tristian-id
+  pullPolicy: IfNotPresent
+  # Overrides the image tag whose default is the chart appVersion.
+  tag: "latest"
+
+service:
+  type: ClusterIP
+  port: 3000
+
+resources:
+  limits:
+    cpu: 150m
+    memory: 128M
+  requests:
+    cpu: 50m
+    memory: 80M
+
+affinity:
+  nodeAffinity:
+    requiredDuringSchedulingIgnoredDuringExecution:
+      nodeSelectorTerms:
+      - matchExpressions:
+        - key: type
+          operator: In
+          values:
+          - app-deployment
+        - key: type
+          operator: NotIn
+          values:
+          - db-deployment
+        - key: type
+          operator: NotIn
+          values:
+          - monitoring-deployment
+
+pdb:
+  minAvailable: 2
+
+health-check:
+  livenessProbe:
+    httpGet:
+      path: /
+      port: http
+  readinessProbe:
+    httpGet:
+      path: /
+      port: http
