@@ -14,8 +14,6 @@ A personal website of Irvan Tristian.
   helm repo add nonkronk https://chart.tristian.id
 ```
 
-Cortex can now be installed with the following command:
-
 ```bash
   helm install pwa nonkronk/tristian-id
 ```
