@@ -15,6 +15,10 @@ A personal website of Irvan Tristian.
 ```
 
 ```bash
+  kubectl label nodes <your-node-name> app-deployment=true
+```
+
+```bash
   helm install pwa nonkronk/tristian-id
 ```
 
