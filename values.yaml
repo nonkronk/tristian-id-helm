@@ -33,19 +33,19 @@ affinity:
     requiredDuringSchedulingIgnoredDuringExecution:
       nodeSelectorTerms:
       - matchExpressions:
-        - key: type
+        - key: app-deployment
           operator: In
           values:
-          - app-deployment
-        - key: type
+          - "true"
+        - key: db-deplyoment
           operator: NotIn
           values:
-          - db-deployment
-        - key: type
+          - "true"
+        - key: monitoring-deployment
           operator: NotIn
           values:
-          - monitoring-deployment
-
+          - "true"
+          
 pdb:
   minAvailable: 2
 
