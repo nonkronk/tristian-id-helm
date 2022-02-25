@@ -3,9 +3,9 @@ entries:
   tristian-id:
   - apiVersion: v2
     appVersion: 0.1.3
-    created: "2022-02-25T08:33:23.333323+07:00"
+    created: "2022-02-25T08:41:07.795411+07:00"
     description: A Helm chart of tristian.id website
-    digest: acd2e1f4e09cd74d8d2e43bc704cbd289cbfdd2337a463ccee41740e25ebdb08
+    digest: bf555768d6fbdf1890a32f2b7f92669bb037c6b96081a4912434ee5243034516
     name: tristian-id
     type: application
     urls:
@@ -13,7 +13,7 @@ entries:
     version: 0.1.3
   - apiVersion: v2
     appVersion: 0.1.3
-    created: "2022-02-25T08:33:23.332927+07:00"
+    created: "2022-02-25T08:41:07.795013+07:00"
     description: A Helm chart of tristian.id website
     digest: a34bce7b77cb07d373520a35a6c591247835843735645898c2161eb4f438245b
     name: tristian-id
@@ -23,7 +23,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 0.1.3
-    created: "2022-02-25T08:33:23.332406+07:00"
+    created: "2022-02-25T08:41:07.794328+07:00"
     description: A Helm chart for tristian.id website
     digest: 1127abe707e14ca4b48fbe79750fa3daca38698ce2326194e0a35d07d3d480f0
     name: tristian-id
@@ -33,7 +33,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 0.1.3
-    created: "2022-02-25T08:33:23.332008+07:00"
+    created: "2022-02-25T08:41:07.793785+07:00"
     description: A Helm chart for tristian.id website
     digest: 83717593379d043d11c24c0c6486567dcdbe88449111e4e77051487f77effb28
     name: tristian-id
@@ -41,4 +41,4 @@ entries:
     urls:
     - tristian-id-0.1.0.tgz
     version: 0.1.0
-generated: "2022-02-25T08:33:23.331321+07:00"
+generated: "2022-02-25T08:41:07.792341+07:00"
