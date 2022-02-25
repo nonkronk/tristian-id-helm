@@ -1,9 +1,9 @@
 apiVersion: v2
 name: tristian-id
-description: A Helm chart for tristian.id website
+description: A Helm chart of tristian.id website
 
 type: application
 
-version: 0.1.1
+version: 0.1.3
 
 appVersion: "0.1.3"
