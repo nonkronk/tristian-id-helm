@@ -1,6 +1,6 @@
 apiVersion: v2
 name: tristian-id
-description: A Helm chart of tristian.id website
+description: A Helm charts of tristian.id website
 
 type: application
 
